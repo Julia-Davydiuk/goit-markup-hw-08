@@ -1,0 +1,103 @@
+.hero {
+  background: $background-secondary;
+  background-image: url(../image/hero/hero-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding-top: 116px;
+  padding-bottom: 120px;
+  text-align: center;
+
+  &-title {
+    margin: 0 auto;
+    max-width: 360px;
+    margin-bottom: 30px;
+
+    font-weight: $font-weight-hero;
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+    color: $secondary-color;
+  }
+}
+
+.modal-btn,
+.modal-form-btn {
+  padding: 10px 20px;
+  min-width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: inherit;
+
+  font-family: Roboto;
+  font-weight: $font-weight-main;
+  font-size: $font-size-secondary;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $secondary-color;
+  background-color: $accent-color;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url(../image/hero/hero-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../image/hero/hero-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: url(../image/hero/hero-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../image/hero/hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-title {
+      max-width: 620px;
+      font-size: 44px;
+      line-height: 1.363;
+    }
+  }
+
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../image/overlay.jpg);
+
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: url(../image/hero/hero-desktop@2x.jpg);
+  }
+}

@@ -1,0 +1,203 @@
+.advantages {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-title {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    font-weight: $font-weight-main;
+    font-size: $font-size-main;
+    line-height: $line-height-main;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $title-color;
+  }
+
+  &-description {
+    width: 450px;
+    font-weight: $font-weight-secondary;
+    font-size: $font-size-main;
+    line-height: $line-height-secondary;
+    letter-spacing: 0.03em;
+    color: $description-color;
+  }
+}
+
+.advantages-list {
+  &-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $bacground-team;
+    border-radius: 4px;
+  }
+  &-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.icone {
+  &-antenna-1::before {
+    background-image: url(../image/advantages/antenna-1.svg);
+  }
+  &-clock-2::before {
+    background-image: url(../image/advantages/clock-2.svg);
+  }
+
+  &-diagram-3::before {
+    background-image: url(../image/advantages/diagram-3.svg);
+  }
+  &-astronaut-4::before {
+    background-image: url(../image/advantages/astronaut-4.svg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    &-title {
+      text-align: left;
+    }
+
+    &-description {
+      width: 350px;
+    }
+  }
+  .advantages-list {
+    display: flex;
+    // flex-wrap: wrap;
+
+    &-item {
+      width: 350px;
+
+      // margin-right: 30px;
+      // margin-bottom: 30px;
+
+      // &:nth-child(2n) {
+      //   margin-right: 0;
+      // }
+
+      // &:nth-last-child(-n + 2) {
+      //   margin-bottom: 0;
+      // }
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &-description {
+      width: 270px;
+    }
+
+    &-list {
+      display: flex;
+
+      &-item {
+        width: 270px;
+      }
+    }
+
+    &-list-item:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// .advantages {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+
+//   &-title {
+//     padding-top: 30px;
+//     margin-bottom: 10px;
+//     font-weight: $font-weight-main;
+//     font-size: $font-size-main;
+//     line-height: $line-height-main;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: $title-color;
+//   }
+// }
+// .advantages-list {
+//   display: flex;
+
+//   &-item:not(:last-child) {
+//     margin-right: 30px;
+//   }
+//   &-item::before {
+//     display: block;
+//     content: "";
+//     height: 120px;
+//     background-size: content;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-color: $bacground-team;
+//     border-radius: 4px;
+//   }
+// }
+// .description {
+//   width: 260px;
+//   font-weight: $font-weight-secondary;
+//   font-size: $font-size-main;
+//   line-height: $line-height-secondary;
+//   letter-spacing: 0.03em;
+//   color: $description-color;
+// }
+
+// .icone {
+//   &-antenna-1::before {
+//     background-image: url(../image/advantages/antenna-1.svg);
+//   }
+//   &-clock-2::before {
+//     background-image: url(../image/advantages/clock-2.svg);
+//   }
+
+//   &-diagram-3::before {
+//     background-image: url(../image/advantages/diagram-3.svg);
+//   }
+//   &-astronaut-4::before {
+//     background-image: url(../image/advantages/astronaut-4.svg);
+//   }
+// }
+
+// .advantages-icon {
+//   display: flex;
+//   background-color: $bacground-team;
+
+//   &-item {
+//     width: 270px;
+//   }
+//   &-item:not(:last-child) {
+//     padding-right: 30px;
+//   }
+
+//   & {
+//     display: inline-flex;
+//     width: 255px;
+//     height: 120px;
+//     margin: 0 auto;
+//     background-color: $bacground-team;
+//   }
+
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+//   & svg {
+//     width: 70px;
+//     height: 70px;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//   }
+// }
