@@ -120,39 +120,61 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="about-us-list list">
             <li class="about-us-list-item">
-              <img
-                class="about-us-list-img"
-                src="./image/about-us/about-us-1.jpg"
-                alt="разработчик пишет код программирования"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/about-us/about-us-1.jpg    1x,
+                    ./image/about-us/about-us-1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="about-us-list-img"
+                  src="./image/about-us/about-us-1.jpg"
+                  alt="разработчик пишет код программирования"
+                />
+              </picture>
+
               <div class="about-us-overlay">
                 <p class="about-us-overlay-title">Десктопные приложения</p>
               </div>
             </li>
 
             <li class="about-us-list-item">
-              <img
-                class="about-us-list-img"
-                src="./image/about-us/about-us-2.jpg"
-                alt="разработчик создает настройки для телефона"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/about-us/about-us-2.jpg    1x,
+                    ./image/about-us/about-us-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="about-us-list-img"
+                  src="./image/about-us/about-us-2.jpg"
+                  alt="разработчик пишет код программирования"
+                />
+              </picture>
               <div class="about-us-overlay">
                 <p class="about-us-overlay-title">Мобильные приложения</p>
               </div>
             </li>
 
             <li class="about-us-list-item">
-              <img
-                class="about-us-list-img"
-                src="./image/about-us/about-us-3.jpg"
-                alt="выбирается палитра цветов"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/about-us/about-us-3.jpg    1x,
+                    ./image/about-us/about-us-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="about-us-list-img"
+                  src="./image/about-us/about-us-3.jpg"
+                  alt="разработчик пишет код программирования"
+                />
+              </picture>
               <div class="about-us-overlay">
                 <p class="about-us-overlay-title">Дизайнерские решения</p>
               </div>
@@ -162,18 +184,41 @@
       </section>
 
       <!--team-->
+
       <section class="team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./image/team/team-1.jpg"
-                alt="смеющийся парень в очках"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team/team-desktop-1.jpg    1x,
+                    ./image/team/team-desktop-1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/team-tablet-1.jpg    1x,
+                    ./image/team/team-tablet-1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/team-mobile-1.jpg    1x,
+                    ./image/team/team-mobile-1@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-list-img"
+                  src="./image/team/team-mobile-1.jpg"
+                  alt="смеющийся парень в очках"
+                />
+              </picture>
+
               <div class="container-description">
                 <h3 class="team-title">Игорь Демьяненко</h3>
                 <p class="team-description" lang="en">Product Designer</p>
@@ -229,13 +274,35 @@
             </li>
 
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./image/team/team-2.jpg"
-                alt="светлая радостная девушка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team/team-desktop-2.jpg    1x,
+                    ./image/team/team-desktop-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/team-tablet-2.jpg    1x,
+                    ./image/team/team-tablet-2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/team-mobile-2.jpg    1x,
+                    ./image/team/team-mobile-2@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-list-img"
+                  src="./image/team/team-mobile-2.jpg"
+                  alt="смеющийся парень в очках"
+                />
+              </picture>
+
               <div class="container-description">
                 <h3 class="team-title">Ольга Репина</h3>
                 <p class="team-description" lang="en">Frontend Developer</p>
@@ -291,13 +358,34 @@
             </li>
 
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./image/team/team-3.jpg"
-                alt="улыбающийся парень"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team/team-desktop-3.jpg    1x,
+                    ./image/team/team-desktop-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/team-tablet-3.jpg    1x,
+                    ./image/team/team-tablet-3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/team-mobile-3.jpg    1x,
+                    ./image/team/team-mobile-3@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-list-img"
+                  src="./image/team/team-mobile-3.jpg"
+                  alt="смеющийся парень в очках"
+                />
+              </picture>
               <div class="container-description">
                 <h3 class="team-title">Николай Тарасов</h3>
                 <p class="team-description" lang="en">Marketing</p>
@@ -353,13 +441,34 @@
             </li>
 
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./image/team/team-4.jpg"
-                alt="парень в очках"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team/team-desktop-4.jpg    1x,
+                    ./image/team/team-desktop-4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/team-tablet-4.jpg    1x,
+                    ./image/team/team-tablet-4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/team-mobile-4.jpg    1x,
+                    ./image/team/team-mobile-4@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-list-img"
+                  src="./image/team/team-mobile-4.jpg"
+                  alt="смеющийся парень в очках"
+                />
+              </picture>
               <div class="container-description">
                 <h3 class="team-title">Михаил Ермаков</h3>
                 <p class="team-description" lang="en">UI Designer</p>
@@ -418,7 +527,7 @@
       </section>
 
       <!--clients-->
-      <!-- <section class="client">
+      <section class="client">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
           <ul class="client-list list">
@@ -466,7 +575,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!--footer-->
