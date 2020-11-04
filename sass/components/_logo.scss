@@ -1,15 +1,10 @@
 .logo {
-  margin-right: 90px;
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   font-family: $secondary-font;
   font-weight: $font-weight-main;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: $logo-color;
+  color: $secondary-color;
 
   &-accent {
     color: $accent-color;
@@ -18,12 +13,43 @@
   &-footer {
     display: block;
     margin-bottom: 20px;
-
-    font-family: $secondary-font;
-    font-weight: $font-weight-main;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    color: $secondary-color;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .logo-footer {
+    font-size: 24px;
+    line-height: 1.166;
+  }
+}
+
+// .logo {
+//   margin-right: 90px;
+//   display: block;
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+
+//   font-family: $secondary-font;
+//   font-weight: $font-weight-main;
+//   font-size: 26px;
+//   line-height: 1.192;
+//   letter-spacing: 0.03em;
+//   color: $logo-color;
+
+//   &-accent {
+//     color: $accent-color;
+//   }
+
+//   &-footer {
+//     display: block;
+
+//     margin-bottom: 20px;
+
+//     font-family: $secondary-font;
+//     font-weight: $font-weight-main;
+//     font-size: 26px;
+//     line-height: 1.192;
+//     letter-spacing: 0.03em;
+//     color: $secondary-color;
+//   }
+// }
