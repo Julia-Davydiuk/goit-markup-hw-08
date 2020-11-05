@@ -120,16 +120,16 @@
       justify-content: center;
     }
   }
-
-  .subscription-form-button {
-    margin-top: 20px;
+  .subscription {
+    &-form-button {
+      display: block;
+      margin: 0 auto;
+    }
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .footer-contact {
-    margin-right: 165px;
-  }
   .subscription {
     width: 450px;
   }
@@ -137,11 +137,13 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-contact {
     margin-left: 76px;
+    margin-right: 165px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-contact {
+    width: 230px;
     margin-right: 70px;
   }
   .subscription {
