@@ -53,7 +53,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width) {
+@media screen and (min-width: 320px) {
   .advantages-list-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -80,6 +80,7 @@
 
     &-item {
       width: 350px;
+
       &:not(:nth-child(even)) {
         margin-right: 30px;
       }
