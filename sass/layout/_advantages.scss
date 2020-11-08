@@ -15,7 +15,6 @@
   }
 
   &-description {
-    width: 450px;
     font-weight: $font-weight-secondary;
     font-size: $font-size-main;
     line-height: $line-height-secondary;
@@ -53,9 +52,12 @@
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .advantages-list-item:not(:last-child) {
     margin-bottom: 30px;
+  }
+  .advantages-description {
+    min-width: 320px;
   }
 }
 

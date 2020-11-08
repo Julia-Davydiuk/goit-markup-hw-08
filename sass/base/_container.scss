@@ -1,16 +1,15 @@
 .container {
-  width: 100%;
+  min-width: 320px;
   padding: 0 15px;
+  &-description {
+    padding: 30px 30px;
+  }
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    min-width: 480px;
     margin: 0 auto;
-
-    &-description {
-      padding: 30px 30px;
-    }
   }
 }
 
