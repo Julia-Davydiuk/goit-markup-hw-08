@@ -21,7 +21,7 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    width: 480px;
     margin: 0 auto;
   }
 }
@@ -361,6 +361,20 @@ input {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .modal {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .modal-form-policy-label {
+    width: 380px;
+    font-size: 12px;
+    line-height: 1.166;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 530px;
@@ -440,10 +454,10 @@ input {
   content: "";
   display: block;
   position: absolute;
-  height: 5px;
+  height: 4px;
   width: 100%;
   left: 0;
-  bottom: 0;
+  bottom: -6px;
   border-radius: 4px;
   background-color: #2196f3;
 }
@@ -1029,6 +1043,9 @@ input {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-contact {
     margin-bottom: 60px;
+  }
+  .subscription-form-input {
+    max-width: 450px;
   }
 }
 
