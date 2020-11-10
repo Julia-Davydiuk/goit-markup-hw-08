@@ -278,8 +278,10 @@ input {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .navigation {
+  .header {
     position: relative;
+  }
+  .navigation {
     display: flex;
     min-height: 60px;
     align-items: center;
@@ -436,9 +438,17 @@ input {
   }
 }
 
+.projects-img {
+  max-width: 100%;
+}
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.projects-list-img {
+  position: relative;
 }
 
 .projects-title {
@@ -462,13 +472,11 @@ input {
 
 .projects-overlay {
   position: absolute;
-  top: 50;
-  left: 50;
-  width: 450px;
+  top: 0;
+  left: 0;
   height: 294px;
   background: rgba(33, 150, 243, 0.9);
   padding: 77px 24px;
-  /* opacity: 0; */
   visibility: hidden;
   pointer-events: none;
   transform: translateY(100%);
@@ -500,8 +508,7 @@ input {
 
 .projects-list-link {
   display: block;
-  width: 450px;
-  position: relative;
+  min-width: 100%;
   overflow: hidden;
 }
 
@@ -510,6 +517,9 @@ input {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .projects-list-item {
+    min-width: 100%;
+  }
   .projects-list-item:not(:last-child) {
     margin-bottom: 30px;
   }

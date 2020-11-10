@@ -95,8 +95,10 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .navigation {
+  .header {
     position: relative;
+  }
+  .navigation {
     display: flex;
     // min-width: 320px;
     min-height: 60px;
